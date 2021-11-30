@@ -1,0 +1,35 @@
+* {
+    margin:0;
+    padding:0;
+    border:0;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff ;
+
+}
+
+main {
+    display:flex;
+    
+}
+
+
+#pagina1 {
+
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+

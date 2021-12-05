@@ -111,10 +111,16 @@ p {
     margin-bottom: 23px;
 }
 
+button:hover {
+    background-color: #7ED321;
+}
+
+
 @media screen and (max-width: 1300px) {
 
     header {
         flex-direction:column;
+        padding-top: 2rem;
     }
 
     h2 {

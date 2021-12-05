@@ -50,13 +50,16 @@ header button {
 
 }
 
-.titulo {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+h2{
+    text-align: center;
     font-size: 48px;
 
+}
+
+#container {
+    display:flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 main {
@@ -111,13 +114,18 @@ textarea {
 
 }
 
-.forms div {
+#nome, #idade, #email, #texto {
     width: 557px;
     display:flex;
+    align-items: center;
     justify-content: flex-end;
     gap: 14px;
     font-size:18px;
     margin-bottom: 20px;
+}
+
+#botao {
+    margin-right: 0
 }
 
 
@@ -129,18 +137,59 @@ label {
     
 }
 
-@media screen and (max-width: 1300px) {
+button:hover {
+    background-color: #7ED32166;
+}
+
+aside button:hover{
+    background-color: #7ED321; 
+
+}
+
+@media screen and (max-width: 1200px) {
 
     header {
         flex-direction:column;
+        padding-top: 2rem;
     }
 
     h2 {
-        font-size: 10vw;
+        font-size: 2rem;
     }
 
     main {
         flex-direction: column;
+        padding-top: 3rem;
+    }
+
+    .conteudo {
+        flex-direction: column;
+    }
+
+    #imagem {
+        display:none;
+    }
+
+    #nome, #idade, #email, #texto{
+        align-items: initial;
+        flex-direction: column;
+        gap: 0;
+        width: 75vw;
+    }
+    
+    #botao {
+        display:flex;
+        justify-content: end;
+
+    }
+
+    input {
+        width: 50vw;
+    }
+
+    label {
+        text-align: initial;
+        width: auto;
     }
 }
 
